@@ -90,11 +90,28 @@ header .btn{
 
 
 /* MAIN */
+
+/* Plan */
 .plan{
 
 
   height: 1000px;
   background-color: aliceblue;
+}
+
+.plan .col{
+  width: calc(100% / 3);
+
+  height: 700px;
+  background-color: coral;
+  border: solid 1px black;
+}
+
+.plan .col-bottom{
+
+
+  height: 200px;
+  background-color: azure;
 }
 
 

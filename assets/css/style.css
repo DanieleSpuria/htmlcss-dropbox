@@ -135,13 +135,25 @@ header .btn{
 }
 
 
-
-
+/* Operation */
 .operation{
 
 
   height: 500px;
   background-color: burlywood;
+}
+
+.operation .row{
+  flex-wrap: wrap;
+}
+
+.operation .col{
+  width: calc(100% / 3);
+
+
+  height: 150px;
+  background-color: darkgreen;
+  border: 1px solid black;
 }
 
 

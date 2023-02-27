@@ -9,6 +9,7 @@ body{
   line-height: 1.3rem;
   color: #000000;
   position: relative;
+  background-color: #ffffff;
 }
 
 li{
@@ -19,6 +20,15 @@ a{
   display: block;
   text-decoration: none;
   color: #000000;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+h4{
+  font-size: 20px;
 }
 
 img{
@@ -32,16 +42,22 @@ img{
 }
 
 .btn{
-  padding: 7px 20px;
+  border: none;
 }
 
 .btn a{
+  padding: 7px 20px;
   color: white;
 }
 
 .flex{
   display: flex;
 }
+
+.myb{
+  margin-bottom: 15px;
+}
+
 
 
 
@@ -134,18 +150,83 @@ header .btn{
 
 /* Plan */
 .plan{
+  padding: 70px 0;
+}
 
-  margin-top: 100px;
-  height: 1000px;
-  background-color: aliceblue;
+.plan > span:first-of-type i{
+  color: #0061ff;
+}
+
+.plan span:nth-child(3) i{
+  color: lightgrey;
+}
+
+.plan .row{
+  margin-top: 20px;
 }
 
 .plan .col{
   width: calc(100% / 3);
+  font-size: 14px;
+  border: solid 1px lightgrey;
+}
 
-  height: 700px;
-  background-color: coral;
-  border: solid 1px black;
+.plan .row span{ 
+  display: block;
+}
+
+.plan .top span{
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: solid 1px lightgrey;
+}
+
+.plan .bottom{
+  padding: 25px;
+}
+
+.plan .bottom h4 + span{
+  font-weight: 800;
+}
+
+.plan .bottom span:nth-child(3){
+  color: #919ca6;
+}
+
+.plan .btn{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #0061ff;
+}
+
+.plan .bottom Button + span{
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.plan .bottom Button + span + a{ 
+  display: inline-block;
+  font-size: 14px;
+  color: #0061ff;
+  text-decoration: underline;
+}
+
+.plan .bottom ul{
+  margin-top: 25px;
+}
+
+.plan .bottom ul :first-child{
+  font-weight: 800;
+}
+
+.plan .bottom li{
+  padding: 15px 0;
+}
+
+.plan .bottom li i{
+  color: #0061ff;
 }
 
 .plan .col-bottom{
@@ -154,6 +235,8 @@ header .btn{
   height: 200px;
   background-color: azure;
 }
+
+
 
 
 /* Partner */

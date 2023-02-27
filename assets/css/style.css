@@ -194,5 +194,11 @@ header .btn{
 /* FOOTER */
 footer{
   height: 500px;
+  padding: 70px;
+  color: #ffffff;
   background-color: #000000;
+}
+
+footer nav ul{
+  margin-right: 200px;
 }

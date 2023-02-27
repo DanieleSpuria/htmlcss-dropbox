@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.3rem;
   color: #000000;
   position: relative;
@@ -58,6 +58,10 @@ img{
   margin-bottom: 15px;
 }
 
+.mxr{
+  margin-right: 50px;
+}
+
 
 
 
@@ -102,7 +106,7 @@ header .btn{
 /* JUMBOTRON */
 .jumbotron{
   margin-top: 70px;
-  padding: 70px;
+  padding: 90px 140px;
   background-color: #b4d0e7;
 }
 
@@ -147,10 +151,13 @@ header .btn{
 
 
 /* MAIN */
+main{
+  padding-top: 150px;
+}
 
 /* Plan */
 .plan{
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .plan > span:first-of-type i{
@@ -166,9 +173,12 @@ header .btn{
 }
 
 .plan .col{
-  width: calc(100% / 3);
   font-size: 14px;
+}
+
+.plan .col-gut{
   border: solid 1px lightgrey;
+  height: 100%;
 }
 
 .plan .row span{ 
@@ -182,7 +192,7 @@ header .btn{
 }
 
 .plan .bottom{
-  padding: 25px;
+  padding: 25px 25px 150px 25px;
 }
 
 .plan .bottom h4 + span{
@@ -317,7 +327,7 @@ header .btn{
 /* FOOTER */
 footer{
   height: 500px;
-  padding: 70px;
+  padding: 90px 140px;
   color: #ffffff;
   background-color: #000000;
 }

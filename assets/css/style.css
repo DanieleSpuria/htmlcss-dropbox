@@ -115,12 +115,26 @@ header .btn{
 }
 
 
-.plan + section{
+/* Partner */
+.partner{
 
 
   height: 400px;
   background-color: rgb(235, 228, 220);
 }
+
+.partner img{
+  width: 55%;
+
+
+  height: 300px;
+}
+
+.partner-text{
+  width: 45%;
+}
+
+
 
 
 .operation{

@@ -13,6 +13,7 @@ li{
 }
 
 a{
+  display: block;
   text-decoration: none;
 }
 
@@ -157,11 +158,29 @@ header .btn{
 }
 
 
+/* Team */
 .team{
 
 
   height: 500px;
   background-color: cornflowerblue;
+}
+
+.box-team{
+
+
+  height: 350px;
+  background-color: aqua;
+}
+
+.team-bottom{
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.team-bottom .center{
+  
 }
 
 

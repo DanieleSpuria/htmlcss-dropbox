@@ -138,13 +138,12 @@ header .btn{
   font-size: 30px;
 }
 
-.jumbo-content .img{
-  position: relative;
-  width: 70%;
+.jumbo-content{
+  margin-bottom: -150px;
 }
 
-.jumbo-content img{
-  position: absolute;
+.jumbo-content .img{
+  width: 70%;
 }
 
 
@@ -152,7 +151,7 @@ header .btn{
 
 /* MAIN */
 main{
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 /* Plan */

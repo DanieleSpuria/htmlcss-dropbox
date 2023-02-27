@@ -5,6 +5,8 @@
 }
 
 body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000000;
   position: relative;
 }
 
@@ -15,12 +17,21 @@ li{
 a{
   display: block;
   text-decoration: none;
+  color: #000000;
 }
 
 .container{
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.btn{
+  padding: 7px 20px;
+}
+
+.btn a{
+  color: white;
 }
 
 .flex{
@@ -37,14 +48,21 @@ header{
   align-items: center;
   position: fixed;
   top: 0;
-  height: 80px;
+  height: 70px;
   width: 100%;
   z-index: 999;
+  padding: 20px;
+  font-size: 14px;
   background-color: #ffffff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+header .left, header .right{
+  align-items: center;
 }
 
 header .logo{
-  padding: 0 20px;
+  padding-right: 20px;
 }
 
 header li{
@@ -52,7 +70,8 @@ header li{
 }
 
 header .btn{
-  padding: 0 20px;
+  margin-left: 20px;
+  background-color: #0061ff;
 }
 
 
@@ -60,7 +79,7 @@ header .btn{
 
 /* JUMBOTRON */
 .jumbotron{
-  margin-top: 80px;
+  margin-top: 70px;
   height: 500px;
   padding: 70px;
   background-color: #b4d0e7;

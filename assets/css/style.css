@@ -3,3 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+/* HEADER */
+header{
+  height: 80px;
+  background-color: #ffffff;
+}
+
+
+
+
+/* JUMBOTRON */
+.jumbotron{
+  height: 500px;
+  background-color: #b4d0e7;
+}
+
+
+
+
+/* MAIN */
+.plan{
+
+
+  height: 1000px;
+  background-color: aliceblue;
+}
+
+
+.plan + section{
+
+
+  height: 400px;
+  background-color: rgb(235, 228, 220);
+}
+
+
+.operation{
+
+
+  height: 500px;
+  background-color: burlywood;
+}
+
+
+.team{
+
+
+  height: 500px;
+  background-color: cornflowerblue;
+}
+
+
+.faq{
+
+
+  height: 500px;
+  background-color:darkcyan; 
+}
+
+
+
+
+/* FOOTER */
+footer{
+  height: 500px;
+  background-color: #000000;
+}

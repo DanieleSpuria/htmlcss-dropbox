@@ -4,10 +4,26 @@
   box-sizing: border-box;
 }
 
+body{
+  position: relative;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 .container{
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.flex{
+  display: flex;
 }
 
 
@@ -15,8 +31,26 @@
 
 /* HEADER */
 header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
   height: 80px;
+  width: 100%;
+  z-index: 999;
   background-color: #ffffff;
+}
+
+header .logo{
+  padding: 0 20px;
+}
+
+header li{
+  padding: 0 20px;
+}
+
+header .btn{
+  padding: 0 20px;
 }
 
 

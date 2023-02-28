@@ -63,8 +63,16 @@ span{
   margin-bottom: 30px;
 }
 
+.myb2{
+  margin-bottom: 80px;
+}
+
 .mxr{
   margin-right: 50px;
+}
+
+.px{
+  padding: 0% 50px;
 }
 
 
@@ -115,8 +123,7 @@ header .btn{
 }
 
 .jumbotron h1{
-  font-size: 90px;
-  line-height: 7rem;
+  font-size: 80px;
   margin-bottom: 40px;
 }
 
@@ -160,7 +167,7 @@ main{
 
 /* Plan */
 .plan{
-  padding: 50px 0;
+  padding: 50px 50px;
 }
 
 .plan > span:first-of-type{
@@ -290,7 +297,7 @@ main{
 
 /* Partner */
 .partner{
-  padding: 100px 0;
+  padding: 100px 50px;
 }
 
 .partner img{
@@ -314,12 +321,11 @@ main{
 }
 
 
+
+
 /* Operation */
 .operation{
 
-
-  height: 500px;
-  background-color: burlywood;
 }
 
 .operation .row{
@@ -327,13 +333,16 @@ main{
 }
 
 .operation .col{
+  padding: 0 50px;
   width: calc(100% / 3);
-
-
-  height: 150px;
-  background-color: darkgreen;
-  border: 1px solid black;
 }
+
+.operation .col p span{
+  display: inline-block;
+  text-decoration: underline;
+}
+
+
 
 
 /* Team */

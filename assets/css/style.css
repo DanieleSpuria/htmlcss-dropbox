@@ -174,7 +174,8 @@ main{
 }
 
 .plan{
-  padding: 50px 50px;
+  padding: 0 50px;
+  margin-bottom: 50px;
 }
 
 .plan > span:first-of-type{

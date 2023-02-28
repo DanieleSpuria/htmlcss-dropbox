@@ -303,6 +303,16 @@ main{
   padding-left: 60px;
 }
 
+.partner-text .btn{
+  background-color: white;
+  border: 1px solid black;
+}
+
+.partner-text .btn a{
+  text-align: left;
+  color: black;
+}
+
 
 /* Operation */
 .operation{

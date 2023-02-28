@@ -6,7 +6,8 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  line-height: 1.3rem;
+  font-size: 18px;
+  line-height: 1.5rem;
   color: #000000;
   position: relative;
   background-color: #ffffff;
@@ -18,21 +19,26 @@ li{
 
 a{
   display: block;
+  font-size: 18px;
   text-decoration: none;
   color: #000000;
 }
 
 h2{
-  font-size: 30px;
-  margin-bottom: 50px;
+  font-size: 50px;
+  margin-bottom: 100px;
 }
 
 h4{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 img{
   width: 100%;
+}
+
+span{
+  display: block;
 }
 
 .container{
@@ -55,7 +61,7 @@ img{
 }
 
 .myb{
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .mxr{
@@ -73,11 +79,10 @@ header{
   align-items: center;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 80px;
   width: 100%;
   z-index: 999;
   padding: 20px;
-  font-size: 14px;
   background-color: #ffffff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 }
@@ -88,7 +93,7 @@ header .left, header .right{
 
 header .logo{
   padding-right: 20px;
-  width: 140px;
+  width: 160px;
 }
 
 header li{
@@ -105,21 +110,25 @@ header .btn{
 
 /* JUMBOTRON */
 .jumbotron{
-  margin-top: 70px;
-  padding: 90px 140px;
+  margin-top: 80px;
+  padding: 0 140px;
   background-color: #b4d0e7;
 }
 
 .jumbotron h1{
-  font-size: 60px;
-  line-height: 5rem;
+  font-size: 90px;
+  line-height: 7rem;
   margin-bottom: 40px;
+}
+
+.jumbo-all{
+  position: relative;
+  top: 100px;
 }
 
 .jumbo-text{
   margin-right: 50px;
   width: 30%;
-  font-size: 14px;
 }
 
 .jumbo-text .btn{
@@ -138,10 +147,6 @@ header .btn{
   font-size: 30px;
 }
 
-.jumbo-content{
-  margin-bottom: -150px;
-}
-
 .jumbo-content .img{
   width: 70%;
 }
@@ -151,7 +156,7 @@ header .btn{
 
 /* MAIN */
 main{
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 /* Plan */
@@ -159,20 +164,36 @@ main{
   padding: 50px 0;
 }
 
+.plan > span:first-of-type{
+  display: inline-block;
+  margin-right: 20px;
+}
+
 .plan > span:first-of-type i{
   color: #0061ff;
 }
 
-.plan span:nth-child(3) i{
+.plan span:nth-of-type(2){
+  display: inline-block;
+}
+
+.plan span:nth-of-type(2) i{
   color: lightgrey;
 }
 
+.plan > span:first-of-type i,
+.plan span:nth-of-type(2) i{
+  cursor: pointer;
+}
+
+
+
 .plan .row{
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .plan .col{
-  font-size: 14px;
+  margin-bottom: 50px;
 }
 
 .plan .col-gut{
@@ -180,27 +201,26 @@ main{
   height: 100%;
 }
 
-.plan .row span{ 
-  display: block;
-}
-
 .plan .top span{
+  width: 100%;
   text-align: center;
   padding: 8px 0;
   border-bottom: solid 1px lightgrey;
 }
 
 .plan .bottom{
-  padding: 25px 25px 150px 25px;
+  padding: 40px 30px;
 }
 
 .plan .bottom h4 + span{
   font-weight: 800;
 }
 
-.plan .bottom span:nth-child(3){
+.plan .col .bottom span:nth-of-type(2){
   color: #919ca6;
 }
+
+
 
 .plan .btn{
   margin-top: 30px;
@@ -208,6 +228,8 @@ main{
   width: 100%;
   background-color: #0061ff;
 }
+
+
 
 .plan .bottom Button + span{
   display: inline-block;
@@ -217,10 +239,11 @@ main{
 
 .plan .bottom Button + span + a{ 
   display: inline-block;
-  font-size: 14px;
   color: #0061ff;
   text-decoration: underline;
 }
+
+
 
 .plan .bottom ul{
   margin-top: 25px;
@@ -238,11 +261,29 @@ main{
   color: #0061ff;
 }
 
-.plan .col-bottom{
+.plan .bottom li::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  color: #0061ff;
+}
 
 
-  height: 200px;
-  background-color: azure;
+
+.plan .col-bottom .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan .bottom-left{
+  width: 70%;
+}
+
+.plan .bottom-right{
+  width: 30%;
+}
+
+.plan .col-bottom .btn{
+  margin: 0;
 }
 
 

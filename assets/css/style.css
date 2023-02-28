@@ -166,6 +166,13 @@ main{
 }
 
 /* Plan */
+#plan::before{
+  content: '';
+  display: block;
+  height: 80px;
+  margin: -80px 0 0;
+}
+
 .plan{
   padding: 50px 50px;
 }
@@ -224,6 +231,7 @@ main{
 
 .plan .col .bottom span:nth-of-type(2){
   color: #919ca6;
+  font-size: 17px;
 }
 
 
@@ -318,6 +326,10 @@ main{
 .partner-text .btn a{
   text-align: left;
   color: black;
+}
+
+.partner-text .btn a:hover{
+  background-color: lightgray;
 }
 
 
@@ -469,6 +481,10 @@ main{
   width: 100%;
   color: black;
   background-color: #ffffff;
+}
+
+.team-bottom .btn a:hover{
+  background-color: lightgray;
 }
 
 

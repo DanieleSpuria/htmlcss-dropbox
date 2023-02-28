@@ -267,11 +267,11 @@ main{
   color: #0061ff;
 }
 
-.plan .bottom li::before{
+/* .plan .bottom li::before{
   font-family: "Font Awesome 5 Free";
   content: '\f00c';
   color: #0061ff;
-}
+} */
 
 
 
@@ -410,10 +410,15 @@ main{
 .faq hr{
   color: #eeeeef
 }
-
+/* 
 .faq li::after{
   font-family: "Font Awesome 5 Free";
   content: '\f107';
+} */
+
+.faq li{
+  display: flex;
+  justify-content: space-between;
 }
 
 

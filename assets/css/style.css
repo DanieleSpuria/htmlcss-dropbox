@@ -346,25 +346,52 @@ main{
 
 
 /* Team */
-.team{
-
-
-  height: 500px;
-  background-color: cornflowerblue;
+.team > a{
+  display: block;
+  color: #0061ff;
+  text-decoration: underline;
 }
 
 .box-team{
 
 
   height: 350px;
-  background-color: aqua;
 }
 
 .team-bottom{
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
+  padding: 100px 0;
+  background-color: #b4d0e7;
 }
+
+.team-bottom .content{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.team-bottom .left{
+  margin-right: 200px;
+  width: 60%;
+}
+
+.team-bottom .left h2{
+  margin: 0;
+}
+
+.team-bottom .right{
+  width: 40%;
+}
+
+.team-bottom .btn{
+  width: 100%;
+} 
+
+.team-bottom .btn a{
+  width: 100%;
+  color: black;
+  background-color: #ffffff;
+}
+
+
 
 
 /* Faq */

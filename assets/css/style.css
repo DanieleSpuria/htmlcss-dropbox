@@ -426,12 +426,45 @@ main{
 
 /* FOOTER */
 footer{
-  height: 500px;
-  padding: 90px 140px;
+  padding: 90px 140px 40px 140px;
+  font-size: 18px;
   color: #ffffff;
   background-color: #000000;
 }
 
 footer nav ul{
-  margin-right: 200px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+footer nav ul li{
+  padding-bottom: 10px;
+}
+
+footer nav ul li ul :first-child{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.hr, .language{
+  color: #999999;
+}
+
+.hr{
+  width: 130px;
+  padding: 20px 0;
+}
+
+.language{
+  display: flex;
+  font-size: 16px;
+}
+
+.language span{
+  padding: 0 8px;
+}
+
+.language span + i{
+  font-size: 10px;
+  line-height: 20px;
 }

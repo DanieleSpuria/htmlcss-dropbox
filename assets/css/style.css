@@ -324,10 +324,6 @@ main{
 
 
 /* Operation */
-.operation{
-
-}
-
 .operation .row{
   flex-wrap: wrap;
 }
@@ -346,6 +342,10 @@ main{
 
 
 /* Team */
+.team{
+  margin-top: 100px
+}
+
 .team > a{
   display: block;
   color: #0061ff;
@@ -396,10 +396,24 @@ main{
 
 /* Faq */
 .faq{
+  padding: 100px 50px;
+}
 
+.faq h3{
+  font-size: 40px;
+}
 
-  height: 500px;
-  background-color:darkcyan; 
+.faq li{
+  padding: 30px 0;
+}
+
+.faq hr{
+  color: #eeeeef
+}
+
+.faq li::after{
+  font-family: "Font Awesome 5 Free";
+  content: '\f107';
 }
 
 

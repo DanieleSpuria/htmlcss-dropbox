@@ -537,9 +537,14 @@ footer nav ul li{
   padding-bottom: 10px;
 }
 
-footer nav ul li ul :first-child{
+footer nav ul li ul :first-child:not(a){
   font-size: 22px;
   font-weight: 800;
+}
+
+footer a{
+  /* font-size: 18px; */
+  color: #ffffff;
 }
 
 .hr, .language{

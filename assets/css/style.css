@@ -352,11 +352,93 @@ main{
   text-decoration: underline;
 }
 
+
+
 .box-team{
-
-
-  height: 350px;
+  height: 40vh;
 }
+
+.box-left, .box-right{
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.box-left a, .box-right a{
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/* .box-left a:after, .box-right a:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+
+.box-left img, .box-right img{
+  width: 100px;
+  filter: invert(1);
+}
+
+.box-left a:first-child{
+  background-color: #a2d39b;
+}
+
+.box-left a:nth-child(2){
+  background-color: #61082b;
+}
+
+.box-left a:nth-child(3){
+  background-color: #0093ce;
+}
+
+.box-left a:nth-child(4){
+  background-color: #ff1c1c;
+}
+
+.box-right a:first-child{
+  background-color: #d5001f;
+}
+
+.box-right a:nth-child(2){
+  background-color: #b4d0e7;
+}
+
+.box-right a:nth-child(3){
+  background-color: #0d2481;
+}
+
+.box-right a:nth-child(4){
+  background-color: #ffd830;
+}
+
+.box-left a:first-child:active{
+  border: 10px solid #d0e9cd;
+}
+
+.box-center{
+  width: 60%;
+  padding: 50px;
+  background-color: #f5f5f5;
+  overflow: scroll;
+}
+
+.box-center h2, .box-center i{
+  display: inline-block;
+  margin: 0;
+}
+
+.box-center i{
+  vertical-align: top;
+}
+
+.box-center .hr, 
+.box-center span:last-child{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
 
 .team-bottom{
   padding: 100px 0;

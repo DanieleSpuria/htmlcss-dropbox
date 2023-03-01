@@ -146,6 +146,11 @@ header .dropdown:hover .dropdown-menu{
   opacity: 1;
 }
 
+header .dropdown:hover{
+  overflow: visible;
+}
+
+
 header .dropdown-menu li:hover{
   background-color: lightgray;
 }
@@ -325,6 +330,10 @@ main{
   content: '\f00c';
   font-weight: 900;
   color: #0061ff;
+}
+
+.plan .bottom li:first-of-type::before{
+  display: none;
 }
 
 

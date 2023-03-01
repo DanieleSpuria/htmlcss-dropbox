@@ -131,6 +131,7 @@ header .btn{
 
 header .dropdown{
   position: relative;
+  overflow: hidden;
 }
 
 header .dropdown-menu{

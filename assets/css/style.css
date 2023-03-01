@@ -78,7 +78,6 @@ span{
 
 
 
-
 /* HEADER */
 header{
   display: flex;
@@ -109,7 +108,7 @@ header nav{
 
 header li{
   line-height: 80px;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   padding: 0 20px;
   white-space: nowrap;
 }
@@ -271,6 +270,10 @@ main{
   font-size: 17px;
 }
 
+.plan .col .bottom span i{
+  padding-right: 5px;
+}
+
 
 
 .plan .btn{
@@ -305,6 +308,7 @@ main{
 }
 
 .plan .bottom li{
+  display: flex;
   padding: 15px 0;
 }
 
@@ -312,11 +316,13 @@ main{
   color: #0061ff;
 }
 
-/* .plan .bottom li::before{
+.plan .bottom li::before{
+  padding-right: 5px;
   font-family: "Font Awesome 5 Free";
   content: '\f00c';
+  font-weight: 900;
   color: #0061ff;
-} */
+}
 
 
 
@@ -566,23 +572,48 @@ main{
   font-size: 40px;
 }
 
-.faq li{
+.question{
+  display: flex;
+  justify-content: space-between;
   padding: 30px 0;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.question i:first-of-type{
+  display: inline-block;
+}
+
+.question i:nth-of-type(2){
+  display: none;
+}
+
+.tendina{
+  padding-bottom: 30px;
+  padding-right: 150px;
+  color: #919ca6;
+  display: none;
+}
+
+.tendina a{
+  display: inline-block;
+  color: #919ca6;
+  text-decoration: underline;
+}
+
+.question:hover .tendina{
+  display: block;
 }
 
 .faq hr{
   color: #eeeeef
 }
+
 /* 
 .faq li::after{
   font-family: "Font Awesome 5 Free";
   content: '\f107';
 } */
-
-.faq li{
-  display: flex;
-  justify-content: space-between;
-}
 
 
 

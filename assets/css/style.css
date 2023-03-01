@@ -108,9 +108,12 @@ header nav{
 
 header li{
   line-height: 80px;
-  margin-bottom: 6px;
   padding: 0 20px;
   white-space: nowrap;
+}
+
+header li:not(.dropdown-menu li){
+  margin-bottom: 6px;
 }
 
 header li:hover:not(.dropdown-menu li){
@@ -135,12 +138,12 @@ header .dropdown-menu{
   top: 83px;
   left: 0;
   background-color: white;
-  display: none;
-  transition: all .2s;
+  opacity: 0;
+  transition: all .5s;
 }
 
 header .dropdown:hover .dropdown-menu{
-  display: block;
+  opacity: 1;
 }
 
 header .dropdown-menu li:hover{
@@ -573,9 +576,9 @@ main{
 }
 
 .question{
+  position: relative;
   padding: 30px 0;
   cursor: pointer;
-  transition: all .2s;
 }
 
 .question span{
@@ -587,21 +590,16 @@ main{
   font-family: "Font Awesome 5 Free";
   content: '\f107';
   font-weight: 900;
+  transition: all 1s;
 }
 
-/* .question span::after{
-  display: none;
-  font-family: "Font Awesome 5 Free";
-  content: '\f106';
-  font-weight: 900;
-} */
-
-
 .tendina{
+  position: absolute;
   padding-bottom: 30px;
   padding-right: 150px;
   color: #919ca6;
-  display: none;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .tendina a{
@@ -610,8 +608,11 @@ main{
   text-decoration: underline;
 }
 
-.question:hover .tendina{
-  display: block;
+.faq li:hover .tendina,
+.faq li:hover .question span::after{
+  position: relative;
+  opacity: 1;
+  content: '\f106';
 }
 
 .faq hr{

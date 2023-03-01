@@ -90,6 +90,7 @@ header{
   z-index: 999;
   padding: 0 20px;
   background-color: #ffffff;
+  border: 1px solid lightgray;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 }
 
@@ -102,18 +103,49 @@ header .logo{
   width: 160px;
 }
 
-header li{
-  line-height: 80px;
-  padding: 0 20px;
+header nav{
+  height: 100%;
 }
 
-header li:hover{
+header li{
+  line-height: 80px;
+  margin-bottom: 3px;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+header li:hover:not(.dropdown-menu li){
   border-bottom: 2px solid black;
+}
+
+header ul:hover:not(.dropdown-menu){
+  border-top: 2px solid white;
 }
 
 header .btn{
   margin-left: 20px;
   background-color: #0061ff;
+}
+
+header .dropdown{
+  position: relative;
+}
+
+header .dropdown-menu{
+  position: absolute;
+  top: 83px;
+  left: 0;
+  background-color: white;
+  display: none;
+  transition: all .2s;
+}
+
+header .dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+header .dropdown-menu li:hover{
+  background-color: lightgray;
 }
 
 

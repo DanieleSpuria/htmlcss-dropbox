@@ -83,13 +83,12 @@ span{
 header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   height: 80px;
   width: 100%;
   z-index: 999;
-  padding: 20px;
+  padding: 0 20px;
   background-color: #ffffff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 }
@@ -104,7 +103,12 @@ header .logo{
 }
 
 header li{
+  line-height: 80px;
   padding: 0 20px;
+}
+
+header li:hover{
+  border-bottom: 2px solid black;
 }
 
 header .btn{
@@ -162,7 +166,7 @@ header .btn{
 
 /* MAIN */
 main{
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 /* Plan */
@@ -367,9 +371,10 @@ main{
 
 
 
+/* TEAM-BOX */
 .box-left, .box-right{
   flex-wrap: wrap;
-  width: 40%;
+  width: 30%;
 }
 
 .box-left a, .box-right a{
@@ -426,9 +431,37 @@ main{
   border: 10px solid #d0e9cd;
 }
 
+.box-left a:nth-child(2):active{
+  border: 10px solid #902650;
+}
+
+.box-left a:nth-child(3):active{
+  border: 10px solid #62c1e7;
+}
+
+.box-left a:nth-child(4):active{
+  border: 10px solid #eb6666;
+}
+
+.box-right a:first-child:active{
+  border: 10px solid #ff3e5b;
+}
+
+.box-right a:nth-child(2):active{
+  border: 10px solid rgb(187, 89, 128);
+}
+
+.box-right a:nth-child(3):active{
+  border: 10px solid #3d58c1;
+}
+
+.box-right a:nth-child(4):active{
+  border: 10px solid #f5e5a0;
+}
+
 .box-center{
-  height: 40vh;
-  width: 60%;
+  height: 30vh;
+  width: 40%;
   padding: 50px;
   background-color: #f5f5f5;
   overflow: scroll;
@@ -448,6 +481,7 @@ main{
   padding-top: 40px;
   padding-bottom: 60px;
 }
+/* TEAM-BOX */
 
 
 
@@ -529,8 +563,10 @@ footer{
   background-color: #000000;
 }
 
+
+
 footer nav ul{
-  margin-right: 50px;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 

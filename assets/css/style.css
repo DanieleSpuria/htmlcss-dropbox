@@ -97,8 +97,7 @@ header{
   z-index: 999;
   padding: 0 20px;
   background-color: #ffffff;
-  border: 1px solid lightgray;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+  border-bottom: 1px solid lightgray;
 }
 
 header .left, header .right{
@@ -114,27 +113,20 @@ header nav{
   height: 100%;
 }
 
-header li{
-  line-height: 80px;
-  padding: 0 20px;
-  white-space: nowrap;
+header ul:not(.dropdown-menu){
+  height: 100%;
 }
 
-header li:not(.dropdown-menu li){
-  margin-bottom: 6px;
+header li{
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+  white-space: nowrap;
 }
 
 header li:hover:not(.dropdown-menu li){
   border-bottom: 2px solid black;
-}
-
-header ul:hover:not(.dropdown-menu){
   border-top: 2px solid white;
-}
-
-header .btn{
-  margin-left: 20px;
-  background-color: #0061ff;
 }
 
 header .dropdown{
@@ -144,11 +136,15 @@ header .dropdown{
 
 header .dropdown-menu{
   position: absolute;
-  top: 83px;
+  top: 78px;
   left: 0;
   background-color: white;
   opacity: 0;
   transition: all .5s;
+}
+
+header .dropdown-menu li{
+  padding: 20px ;
 }
 
 header .dropdown:hover .dropdown-menu{
@@ -162,6 +158,11 @@ header .dropdown:hover{
 
 header .dropdown-menu li:hover{
   background-color: lightgray;
+}
+
+header .btn{
+  margin-left: 20px;
+  background-color: #0061ff;
 }
 
 
